@@ -5,8 +5,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  namespace :v1, defaults: { format: 'json' } do
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
     get 'greetings', to: 'greetings#index'
+    end
   end
 
   get '*page', to: 'static#index', constraints: lambda { |req|

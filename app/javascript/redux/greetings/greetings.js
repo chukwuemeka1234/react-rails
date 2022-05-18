@@ -1,6 +1,6 @@
 const LOAD_GREETING = 'App/greetings/LOAD_GREETING';
 
-const URL = 'http://localhost:3000/v1/greetings';
+const URL = 'http://localhost:3000/api/v1/greetings';
 
 const initialState = {
     id: 1000,
